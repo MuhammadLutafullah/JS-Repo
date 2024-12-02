@@ -24,8 +24,8 @@ const score3 = new Number(100);
 // precision use to round-off our values:
 
 const otherNumber = 23.879;
-// console.log(otherNumber.toPrecision(3));
-// console.log(otherNumber.toPrecision(2));
+console.log(otherNumber.toPrecision(3));
+console.log(otherNumber.toPrecision(2));
 
 // toLocalString is used for comma's in our value default it set comma's according to US standards but we can also change them
 // and convert our number into String :
@@ -56,7 +56,7 @@ const otherNumber = 23.879;
 
 // In floor we always choose low value:
 
-// console.log(`our Floor Value is ${Math.floor(4.9)}`);
+console.log(`our Floor Value is ${Math.floor(4.9)}`);
 
 // to find min value:
 

@@ -29,9 +29,9 @@ let ourArray = [0, 0, 0, 0, 0];
 
 let shiftArray = [1, 1, 1, 1, 2, 2, 2];
 
-// shiftArray.unshift(7);
-// shiftArray.shift();
-// console.log(shiftArray);
+shiftArray.unshift(7);
+shiftArray.shift();
+console.log(shiftArray);
 
 // ********** include or indexOf ***************//
 
@@ -46,10 +46,14 @@ let joinArray = [1, 2, 3, 4, 5, 6, 7];
 
 // COnvert our Array into string and sperated each element with comma
 
-// let newjoinArray = joinArray.join();
-// console.log(newjoinArray);
-// console.log(typeof newjoinArray);
+let newjoinArray = joinArray.join();
+console.log(`Use of join convert our Array into this ${newjoinArray}`);
+console.log(typeof newjoinArray);
 
+let name = "AHMAD";
+naam = name.split();
+console.log(naam);
+console.log(typeof naam);
 // ************ Slice or Splice *************//
 
 // Slice => make copy of reference tells in Slice() and main array is not changed:

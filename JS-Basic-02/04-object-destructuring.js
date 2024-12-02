@@ -7,6 +7,7 @@ let userDetails = {
   location: "FSD",
   isLoggedin: false,
   lastLoginDays: ["monday, saturday"],
+  city: "FSD",
 };
 
 // First way get get there value with dot notation and store them in a variavle:
@@ -16,5 +17,5 @@ let userDetails = {
 
 // Now the Easy way in this way we can change the key of name is present in the userDetails Object also:
 
-const { age, name: naam, "full name": fullName } = userDetails;
-console.log(naam, age, fullName);
+let { age, name: naam, "full name": fullName, city: shehar } = userDetails;
+console.log(naam, age, fullName, shehar);

@@ -8,7 +8,7 @@ let userDetails = new Object();
 (userDetails.name = "AHMAD"),
   (userDetails.id = "abc123"),
   (userDetails.isLoggedin = false);
-// console.log(userDetails);
+console.log(userDetails);
 
 // Now add Two objects
 

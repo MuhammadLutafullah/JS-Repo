@@ -19,3 +19,5 @@ while (j < myArray.length) {
   console.log(`j's current value is : ${myArray[j]}`);
   j = j + 1;
 }
+
+// Do-

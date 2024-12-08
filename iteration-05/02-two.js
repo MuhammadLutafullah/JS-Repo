@@ -20,4 +20,9 @@ while (j < myArray.length) {
   j = j + 1;
 }
 
-// Do-
+// Do-While:
+let score = 1;
+do {
+  console.log(`your score is ${score}`);
+  score++;
+} while (score <= 10);

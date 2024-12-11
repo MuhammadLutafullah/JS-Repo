@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Edit or Remove Element</title>
+  </head>
+  <body style="background-color: #000; color: white">
+    <ul class="language">
+      <li>Javascript</li>
+      <li>Angular</li>
+    </ul>
+  </body>
+  <script>
+    // Add Element
+    function addNewlang(langname) {
+      let li = document.createElement("li");
+      li.innerHTML = `${langname}`;
+      let ul = document.querySelector(".language");
+      ul.appendChild(li);
+    }
+    addNewlang("React");
+    addNewlang("SCSS");
+
+    // Edit Element with inner or textContent
+    // Select our SCSS li
+    let scssLi = document.querySelector("li:nth-child(3)");
+    console.log(scssLi);
+    // Create new Li
+    let newLi = document.createElement("li");
+    newLi.textContent = "CSS";
+    // Replace it
+    scssLi.replaceWith(newLi);
+
+    // Edit Element with OuterHTML
+    let ts = document.querySelector("li:first-child");
+    console.log(ts);
+    ts.outerHTML = "<li>Typescript</li>";
+
+    // Remove Element:
+    let ourRemoveElement = document.querySelector("li:nth-child(2)");
+    console.log(ourRemoveElement);
+    ourRemoveElement.remove();
+  </script>
+</html>

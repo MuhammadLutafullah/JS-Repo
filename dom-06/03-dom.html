@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning Created a New Element</title>
+  </head>
+  <body style="background-color: #000; color: white"></body>
+  <script>
+    // Create what type of Element you Need:
+    let newDiv = document.createElement("div");
+    console.log(newDiv);
+    // Set Class
+    newDiv.className = "DOM-created-element";
+    // Set id:
+    newDiv.id = "3";
+    // Set Created Element Text
+    console.log((newDiv.innerText = "AHMAD"));
+    //  append Created Element to the document body
+    document.body.appendChild(newDiv);
+  </script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-DOM Parent => Child or Child => Parent access</title>
+  </head>
+  <body style="background-color: #000">
+    <div class="parent">
+      <div class="day" style="color: white">Monday</div>
+      <div class="day" style="color: white">Tuesday</div>
+      <div class="day" style="color: white">Wednesday</div>
+      <div class="day" style="color: white">Thursday</div>
+    </div>
+  </body>
+  <script>
+    //************************************8 We get our parent
+    // let parent = document.querySelector(".parent");
+    // console.log(parent);
+    // Now we see all children of parent in HTML collection
+    // console.log(parent.children);
+    // Now we want to see specific children
+    // console.log(parent.children[0]);
+    // Now we get it's innerHTMl also:
+    // console.log((parent.children[0].innerHTML = "Sunday"));
+
+    //****************************************** Loop applay HTTMLcollection => Array => variable => forEach
+    // let upDatedParent = Array.from(parent.children);
+    // console.log(upDatedParent);
+    // upDatedParent.forEach((item) => {
+    //   console.log(item);
+    // });
+
+    //************************************ Loop with HTMl collection
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    // Get all child with HTML Tags
+    // console.log(parent.children[i]);
+    // Gel all Child text with innerHTML:
+    // console.log(`Our Days are ${parent.children[i].innerHTML}`);
+    // }
+    // You can Directly access first or last children of parent element:
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // *************************In upar we move fron parent to child now we move treverse order child to parent:
+
+    // let dayOne = document.querySelector(".day");
+    // console.log(dayOne);
+    // Move child to parent:
+    // console.log(dayOne.parentElement);
+    // Move to sibling:
+    // console.log(dayOne.nextElementSibling);
+
+    // ***************** Find Nodes of parent Element
+    let parent = document.querySelector(".parent");
+    console.log("NODES ARE : ", parent.childNodes);
+    // In result of nodes we we see more than foue nodes it because it includes each and every single information:
+  </script>
+</html>

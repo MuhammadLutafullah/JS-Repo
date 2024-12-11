@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning</title>
+  </head>
+  <body>
+    <div class="bg-black" id="bg-black">
+      <h1 class="heading">Dom Learning</h1>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <p class="heading2">
+        Lorem ipsum dolor sit amet.
+        <span class="span-text" style="display: none">text is hide</span>
+      </p>
+      <ul id="myList" class="my-list">
+        <li class="my-li">lione</li>
+        <li class="my-li">litwo</li>
+        <li class="my-li">lithree</li>
+      </ul>
+
+      <!-- Only give first matching Element -->
+      <!-- document.querySelector("#myList li").style.color = "red"; -->
+
+      <!-- Gives more than one Element  -->
+      <!-- document.querySelectorAll("#myList li")[0].style.color = "red"; -->
+
+      <!-- All Colors of li is changes for each applay on the given NodeList by the querySelectorAll-->
+      <!-- document.querySelectorAll("#myList li").forEach(li => {
+        li.style.color = "red";
+        }); -->
+    </div>
+  </body>
+</html>
+
+<!-- 
+to see the DOM of this page write on console of google console,log(window.document)
+Detail DOM of this page is present on desktop in the form of image 
+
+
+Methods: 
+getElementById ==> get by ID
+getElementByClassName ==> get by class
+qureySelector ==> give first tag if page have 2 h1 tag
+qureySelectorAll ==> give us all the h2 tag are present on DOM
+
+To Get HTML or Text:
+innerHTML ==> all the HTML return with tag or text if it is hide with CSS
+innerText ==> only return Visible text
+textContent ==> show all the text if it is hide with CSS it only shows text
+
+
+use ul with querySelectorAll and it return us NodeList it is not array it is HTML collection
+in prototype of NodeList we don't have map this is not pure array 
+
+
+===> Convert these with Array.from or applay map function on it
+
+NodeList ==> Array
+HTMLCollection ==> Array
+
+-->

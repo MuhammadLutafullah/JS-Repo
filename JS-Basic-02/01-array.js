@@ -31,7 +31,7 @@ let shiftArray = [1, 1, 1, 1, 2, 2, 2];
 
 shiftArray.unshift(7);
 shiftArray.shift();
-console.log(shiftArray);
+// console.log(shiftArray);
 
 // ********** include or indexOf ***************//
 
@@ -44,16 +44,24 @@ let incArray = [1, 2, 3, 4, 5, 6, 7];
 
 let joinArray = [1, 2, 3, 4, 5, 6, 7];
 
-// COnvert our Array into string and sperated each element with comma
+// Convert our Array into string and sperated each element with comma's:
 
-let newjoinArray = joinArray.join();
-console.log(`Use of join convert our Array into this ${newjoinArray}`);
-console.log(typeof newjoinArray);
+let newjoinArray = joinArray.join(); // ==>  1,2,3,4,5,6,7
+// console.log(`Use of join convert our Array into String ${newjoinArray}`);
+// console.log(typeof newjoinArray);
 
+// ******************
 let name = "AHMAD";
 naam = name.split();
-console.log(naam);
-console.log(typeof naam);
+// console.log(naam);
+// console.log(typeof naam);
+
+// ******************
+let nameFull = "AHMAD%LUTAFULLAH";
+naam2 = nameFull.split("%");
+// console.log(naam2);
+// console.log(typeof naam2);
+
 // ************ Slice or Splice *************//
 
 // Slice => make copy of reference tells in Slice() and main array is not changed:
@@ -62,17 +70,17 @@ let spArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let sliceArray = spArray.slice(1, 5);
 
-// console.log(sliceArray);
+// console.log(sliceArray); // ==> make Deep Copy
 // console.log(spArray);
 
 // Splice ==> assign real reference and main Array is changed
 
 let spliceArray = spArray.splice(6, 8);
-// console.log(spliceArray);
+// console.log(spliceArray);  // ==> make Shallow Copy
 
 // console.log(spArray);
 
-// ********** Specia Case ***********//
+// ********** Special Case ***********//
 
 let marvel_heros = ["thor", "ironman", "spiderman"];
 let dc_heros = ["batman", "superman", "flash"];
@@ -106,15 +114,17 @@ let allNewHeros = [...dc_heros, ...marvel_heros];
 
 // isArray is used to ask Question:
 let checkType = Array.isArray("AHMAD");
-console.log(checkType);
+// console.log(checkType);
 
-//  from is used to convert in Array:
+//  from is used to convert single String into Array:
 checkType = Array.from("AHMAD");
-console.log(checkType);
+// console.log(checkType);
+// console.log(Array.isArray(checkType));
 
+// of Array is Used to convert more than one variable of String into Array :
 let score1 = 100;
 let score2 = 200;
 let score3 = 300;
 
 let combineVariable = Array.of(score1, score2, score3);
-console.log(combineVariable);
+// console.log(combineVariable);

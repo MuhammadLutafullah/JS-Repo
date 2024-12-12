@@ -8,7 +8,7 @@ let languages = ["HTML", "CSS", "Javascript", "SCSS", "Jquery"];
 //   console.log(`Our Current Language is ${value}`);
 // });
 
-// we define an function whose simple print the given value and cal it in forEach:
+// we define an function whose simple print the given value and call it in forEach:
 let printValues = (value) => {
   //   console.log(`Our Language is ${value}`);
 };

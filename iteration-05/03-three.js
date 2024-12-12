@@ -29,7 +29,7 @@ map.set("IN", "india");
 map.set("pk", "Pakistan");
 map.set("Fr", "France");
 
-// console.log(map);
+console.log(map);
 
 // Applay For of Loop on Map
 
@@ -52,7 +52,7 @@ let userDetail = {
 
 // Applay For of Loop on Object:
 
-for (const key of userDetail) {
-  //   console.log(key);
-}
+// for (const key of userDetail) {
+//   console.log(key);
+// }
 // For of loop is not applay on Objects because objct is not iterables

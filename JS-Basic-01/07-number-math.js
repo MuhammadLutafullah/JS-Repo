@@ -19,13 +19,13 @@ const score2 = new Number(107);
 
 const score3 = new Number(100);
 
-// console.log(score3.toFixed(2));
+// console.log(score3.toFixed(1));  //  ==> 100.0
 
 // precision use to round-off our values:
 
 const otherNumber = 23.879;
-console.log(otherNumber.toPrecision(3));
-console.log(otherNumber.toPrecision(2));
+// console.log(otherNumber.toPrecision(3)); ==> 23.9
+// console.log(otherNumber.toPrecision(2)); ==> 24
 
 // toLocalString is used for comma's in our value default it set comma's according to US standards but we can also change them
 // and convert our number into String :
@@ -52,11 +52,11 @@ console.log(otherNumber.toPrecision(2));
 // console.log(Math.round(4.7));
 
 // In ceil we use higher value:
-// console.log(`our ceil value is ${Math.ceil(4.1)}`);
+// console.log(`our ceil value is ${Math.ceil(4.1)}`);  4.1 ==> 5
 
 // In floor we always choose low value:
 
-console.log(`our Floor Value is ${Math.floor(4.9)}`);
+// console.log(`our Floor Value is ${Math.floor(4.9)}`);  4.9 ==> 4
 
 // to find min value:
 

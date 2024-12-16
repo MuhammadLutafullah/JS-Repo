@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+  </head>
+  <body>
+    <p class="clock"></p>
+    <script>
+      let clock = document.querySelector(".clock");
+      //   setinterval tale two parameter first is callback and second is timeStamp to run function again and again continously:
+      setInterval(() => {
+        let date = new Date();
+        console.log(date.toLocaleTimeString());
+        clock.innerText = date.toLocaleTimeString();
+      }, 1000);
+    </script>
+  </body>
+</html>

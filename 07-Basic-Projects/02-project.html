@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <form>
+      <label>Height in CM</label>
+      <input type="text" id="height" />
+      <label>Weight in KG</label>
+      <input type="text" id="weight" />
+      <button>Calculate</button>
+      <p class="result"></p>
+    </form>
+    <script>
+      let form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let height = parseInt(document.querySelector("#height").value);
+        let weight = parseInt(document.querySelector("#weight").value);
+        let result = document.querySelector(".result");
+
+        if (isNaN(height) || height < 0) {
+          result.innerText = "Enter Valid Height";
+        } else if (isNaN(weight) || weight < 0) {
+          result.innerText = "Enter Valid Weight";
+        } else {
+          let BMI = (weight / ((height * height) / 10000)).toFixed(3);
+          result.innerText = `Your BMI is ${BMI}`;
+        }
+      });
+    </script>
+  </body>
+</html>

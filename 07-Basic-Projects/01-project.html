@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Background Color Chnage on Click of Box</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    .box-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .box-otr {
+      width: 103px;
+      height: 103px;
+      list-style: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .box-otr:hover {
+      transform: translateY(-7px);
+    }
+    #grey {
+      background-color: gray;
+    }
+    #royalblue {
+      background-color: royalblue;
+    }
+    #red {
+      background-color: red;
+    }
+    #yellow {
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <ul class="box-main">
+      <li class="box-otr" id="grey"></li>
+      <li class="box-otr" id="royalblue"></li>
+      <li class="box-otr" id="red"></li>
+      <li class="box-otr" id="yellow"></li>
+    </ul>
+    <script>
+      let body = document.querySelector("body");
+      let box_otr = document.querySelectorAll(".box-otr");
+      box_otr.forEach((item) => {
+        console.log(item.id);
+        item.addEventListener("click", (e) => {
+          if (e.target.id === "grey") {
+            body.style.backgroundColor = e.target.id;
+          }
+          if (e.target.id === "royalblue") {
+            body.style.backgroundColor = e.target.id;
+          }
+          if (e.target.id === "red") {
+            body.style.backgroundColor = e.target.id;
+          }
+          if (e.target.id === "yellow") {
+            body.style.backgroundColor = e.target.id;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
